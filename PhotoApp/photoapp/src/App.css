@@ -1,0 +1,36 @@
+
+ .App {  
+  text-align: center;
+  
+}
+
+nav {
+  background-image: linear-gradient(to left,#52a1d9 , #053f69);
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+   /* align-items: center;  */
+  justify-content: center;
+  font-size: calc(20px + 1vmin);
+  color: white;
+  }
+  li {
+    list-style: none;
+    justify-content: center;
+    
+  }
+  .card-list {
+    display: flex;
+    align-items: center; 
+   justify-content: center; 
+  }
+  .Portofolio-title {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 60px;
+    font-size: calc(20px + 4vmin);
+    font-family: sans-serif;
+    color: #95979e;
+    
+  }
