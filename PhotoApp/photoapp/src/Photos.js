@@ -9,13 +9,15 @@ export default function Photos() {
       "https://api.unsplash.com/users/andrei_carina?client_id=jh-BBeTY72RGtUv6080bnTbRZ5NvA__QtOzZFOl7HAM"
     )
       .then((response) => response.json())
-      .then((query) => setPhotos(query.photos));
+      .then((query) =>
+        setPhotos(query.photos, 1, 10, "latest", { orientation: "landscape" })
+      );
   }, []);
 
   return (
     <>
-      <form>
-        {/* <label htmlFor="query"> </label>
+      {/* <form>
+         <label htmlFor="query"> </label>
         <input
           type="text"
           name="search"
@@ -28,8 +30,8 @@ export default function Photos() {
         />
          <button type="submit" className="button">
            Search
-         </button>   */}
-      </form>
+         </button>    */}
+      {/* </form> */}
       <div className="card-list">
         {photos.map((pic) => (
           <div key={pic.id}>

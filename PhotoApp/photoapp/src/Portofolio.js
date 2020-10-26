@@ -1,26 +1,24 @@
-// import React from 'react';
 import React from "react";
-// import DogList from "./DogList";
-// import { dogs } from "./dogs";
-// import SearchBox from "./SearchBox";
 // import {link} from 'react-router-dom'
-import Photos from "./Photos"
+import Photos from "./Photos";
+import Form from "./Form";
+import Text from "./Text";
 
-
-
-// export const Portofolio = (props) => {
-// return(
-
-    function Portofolio() {
-      return (
+function Portofolio() {
+  return (
+    <div>
+      <div>
+        <h1 className="Portofolio-title">Portofolio</h1>
         <div>
-          <div>
-            <h1 className="Portofolio-title">Portofolio</h1>
-            <Photos/>
-          </div>
+          <Photos />
         </div>
-      );
-    }
-   
-    export default Portofolio;
-                                          
+        <div className="text-form">
+          <Text />
+          <Form />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Portofolio;
