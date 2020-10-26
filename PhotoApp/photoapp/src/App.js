@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Link,  Switch } from "react-router-dom";
 // import {Users} from "./Users"
 import Portofolio from "./Portofolio";
 import Home from "./Home";
+import Client from "./Client";
 
 
 // const Home =() => <h2>Home</h2>;
@@ -25,6 +26,7 @@ function App() {
         </li>
         <li>
           {/* <Link to="/users">Users</Link> */}
+          <Link style={navStyle} to="/Client">Client</Link>
         </li>
       </ul>
 
@@ -35,6 +37,7 @@ function App() {
       <Route path="/Portofolio" component={Portofolio} />
       {/* <Route path="/users/:id" component={Users} /> */}
       {/* <Route path="/users" component={Users} /> */}
+      <Route path="/Client" component={Client}/>
       </Switch>
        </BrowserRouter> 
   );
