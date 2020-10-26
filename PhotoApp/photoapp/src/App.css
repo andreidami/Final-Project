@@ -1,36 +1,44 @@
-
- .App {  
+.App {
   text-align: center;
-  
 }
 
 nav {
-  background-image: linear-gradient(to left,#52a1d9 , #053f69);
+  background-image: linear-gradient(to left, #52a1d9, #053f69);
   height: 100px;
   display: flex;
   flex-direction: column;
-   /* align-items: center;  */
+  /* align-items: center;  */
   justify-content: center;
   font-size: calc(20px + 1vmin);
   color: white;
-  }
-  li {
-    list-style: none;
-    justify-content: center;
-    
-  }
-  .card-list {
-    display: flex;
-    align-items: center; 
-   justify-content: center; 
-  }
-  .Portofolio-title {
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    height: 60px;
-    font-size: calc(20px + 4vmin);
-    font-family: sans-serif;
-    color: #95979e;
-    
-  }
+}
+li {
+  list-style: none;
+  justify-content: center;
+}
+.card-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Portofolio-title {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  font-size: calc(20px + 4vmin);
+  font-family: sans-serif;
+  color: #95979e;
+}
+.text-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4c4e53;
+  background-image: linear-gradient(#ffffff, #81b8e0);
+}
+
+.Req-photo {
+  font-size: calc(10px + 4vmin);
+  font-family: sans-serif;
+  color: #95979e;
+}

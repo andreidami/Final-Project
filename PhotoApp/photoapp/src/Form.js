@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class SignIn extends Component {
+export default class Form extends Component {
   state = {
     user: "",
     rememberMe: false,
@@ -27,10 +27,9 @@ export default class SignIn extends Component {
   render() {
     return (
       <>
-        <p>Request Photo</p>
         <form onSubmit={this.handleFormSubmit}>
           <label>
-            User:{" "}
+            Email:{" "}
             <input
               name="user"
               value={this.state.user}
@@ -44,7 +43,7 @@ export default class SignIn extends Component {
               onChange={this.handleChange}
               type="checkbox"
             />{" "}
-            Remember me
+            Remember Me
           </label>
 
           <div>
