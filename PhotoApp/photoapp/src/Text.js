@@ -17,14 +17,14 @@ class Text extends Component {
   render() {
     return (
       <>
-        <p className="Req-photo">Request Photo</p>
+        {/* <p className="Req-photo">Request Photo</p> */}
         <div>
           <label>Photo Description : </label>
           <textarea
             value={this.state.textAreaValue}
             onChange={this.handleChange}
             rows={10}
-            cols={100}
+            cols={50}
           />
         </div>
       </>

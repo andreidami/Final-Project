@@ -15,13 +15,20 @@ export default class Form extends Component {
 
   handleFormSubmit = () => {
     const { user, rememberMe } = this.state;
-    localStorage.setItem("rememberMe", rememberMe);
-    localStorage.setItem("user", rememberMe ? user : "");
+    localStorage.setItem(
+      user,
+      JSON.stringify({
+        rememberMe,
+        user,
+      })
+    );
+    // localStorage.setItem("rememberMe", rememberMe);
+    // localStorage.setItem("user", rememberMe ? user : "");
   };
   componentDidMount() {
-    const rememberMe = localStorage.getItem("rememberMe") === "true";
-    const user = rememberMe ? localStorage.getItem("user") : "";
-    this.setState({ user, rememberMe });
+    // const rememberMe = localStorage.getItem("rememberMe") === "true";
+    const user = JSON.parse(localStorage.getItem(""));
+    this.setState(user);
   }
 
   render() {
