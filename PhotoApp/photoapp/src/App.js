@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
-// import {Users} from "./Users"
 import Portofolio from "./Portofolio";
 import Home from "./Home";
+
+import RequestPhoto from "./RequestPhoto"
 
 
 
@@ -25,15 +26,13 @@ function App() {
               Portofolio
             </Link>
           </li>
-          <li>{/* <Link to="/users">Users</Link>  */}</li>
         </ul>
       </nav>
 
       <Switch>
         <Route exact={true} path="/" component={Home} />
-        <Route path="/Portofolio" component={Portofolio} />
-        {/* <Route path="/users/:id" component={Users} />  */}
-        {/* <Route path="/users" component={Users} />  */}
+        <Route path="/Portofolio" exact component={Portofolio} />
+        <Route path="/Portofolio/:id" component={RequestPhoto} />
       </Switch>
     </BrowserRouter>
   );

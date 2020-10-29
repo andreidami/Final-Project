@@ -1,8 +1,8 @@
 import React from "react";
 // import {link} from 'react-router-dom'
 import Photos from "./Photos";
-import Form from "./Form";
-import Text from "./Text";
+//  import Form from "./Form";
+// import Text from "./Text";
 
 function Portofolio() {
   return (
@@ -13,8 +13,8 @@ function Portofolio() {
           <Photos />
         </div>
         <div className="text-form">
-          <Text />
-          <Form />
+          {/* <Text /> 
+          <Form /> */}
         </div>
       </div>
     </div>
