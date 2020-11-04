@@ -16,19 +16,21 @@ export default function Home() {
           location: obj.location,
           instagram: obj.portfolio_url,
         });
-        console.log(obj);
+        
       });
   }, []);
 
   return (
     <>
-      <div>
-        <p>{user.bio}</p>
-        <p>{user.name}</p>
-        <img src={user.profilePic} alt={user} />
-        <p>{user.location}</p>
+      <div className="profile">
+        <p className="bio">{user.bio}</p>
+        <p className="user">{user.name}</p>
+        <img className="imgprofile" src={user.profilePic} alt={user} />
+        <p className="location">{user.location}</p>
         <div>
-          <a href={user.instagram}>Instagram</a>
+          <a className="insta" href={user.instagram}>
+            Instagram
+          </a>
         </div>
       </div>
     </>
