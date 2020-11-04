@@ -1,12 +1,10 @@
 export const getFavourites = () => {
   const data = JSON.parse(localStorage.getItem("list")) || [];
-  console.log(data);
+
   return data;
 };
 export const checkPhoto = (id) => {
   const list = getFavourites();
-  console.log(list.findIndex((photo) => photo.id === id));
-  console.log("idfromcheckphotos", id);
 
   return list.findIndex((photo) => photo.id === id) !== -1;
 };

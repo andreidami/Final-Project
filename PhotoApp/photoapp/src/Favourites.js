@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Favourites = () => {
   const photo = getFavourites();
-  console.log(photo);
+
   return (
     <div className="card-list">
       {photo.map((pic) => (

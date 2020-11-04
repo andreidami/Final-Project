@@ -18,13 +18,14 @@ function RequestPhoto() {
           model: obj.exif.model,
           aperture: obj.exif.aperture,
           exposure: obj.exif.exposure_time,
-          focal: obj.focal_length,
-          iso: obj.iso,
+          focal: obj.exif.focal_length,
+          iso: obj.exif.iso,
           description: obj.description,
           photo: obj.urls.small,
           location: obj.location.name,
           downloads: obj.downloads,
           id: obj.id,
+          tags:obj.tags
         });
       });
   }, [obj]);
@@ -54,6 +55,11 @@ function RequestPhoto() {
         <p>Exposure time: {photo.exposure}</p>
         <p>Focal length: {photo.focal}</p>
         <p>Iso: {photo.iso}</p>
+        <span>Tags: </span>
+        <ul>
+         {photo.tags && photo.tags.map((tag) =>
+        {return <li>{tag.title};</li>})}
+          </ul>
       </div>
       <div></div>
     </>
