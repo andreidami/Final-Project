@@ -1,9 +1,12 @@
 .App {
   text-align: center;
 }
+body {
+  background-image: linear-gradient(to left, #d9ba52ea, #053f69);
+}
 
 nav {
-  background-image: linear-gradient(to left, #52a1d9, #053f69);
+  background-image: linear-gradient(to left, #78acd1, #053f69);
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -29,7 +32,7 @@ li {
   font-family: sans-serif;
   color: #95979e;
 }
-.text-form {
+/* .text-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,4 +44,51 @@ li {
   font-size: calc(10px + 4vmin);
   font-family: sans-serif;
   color: #95979e;
+} */
+.profile {
+  font-family: "Roboto Slab", serif;
+  font-family: "Syne Mono", monospace;
+}
+
+.bio {
+  font-size: 25px;
+  display: flex;
+  text-align: center;
+  opacity: 75%;
+}
+.user {
+  display: flex;
+  margin-left: 600px;
+  font-size: 30px;
+  color: #053f69;
+}
+.imgprofile {
+  display: flex;
+  border-radius: 100px;
+  margin-left: 630px;
+  border: 5px solid gray;
+  box-shadow: 30px 1px 80px rgba(160, 179, 185, 0.5);
+  opacity: 10;
+  padding: 5px;
+  width: 150px;
+}
+.location {
+  margin-left: 660px;
+}
+.insta {
+  display: flex;
+  margin-left: 660px;
+  width: 80px;
+  padding: 10px;
+  border: 2px solid gray;
+}
+.requestphoto {
+  font-size: 25px;
+  font-family: "Roboto Slab", serif;
+  font-family: "Syne Mono", monospace;
+  opacity: 70%;
+}
+.userdescription {
+  font-family: "Roboto Slab", serif;
+  font-family: "Syne Mono", monospace;
 }
