@@ -5,6 +5,7 @@ import Home from "./Home";
 import RequestPhoto from "./RequestPhoto";
 import Favourites from "./Favourites";
 
+
 function App() {
   const navStyle = {
     color: "white",
